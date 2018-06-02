@@ -1,122 +1,69 @@
 {
-  "_from": "discord.js",
-  "_id": "discord.js@11.3.2",
+  "_from": "async-limiter@~1.0.0",
+  "_id": "async-limiter@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-Abw9CTMX3Jb47IeRffqx2VNSnXl/OsTdQzhvbw/JnqCyqc2imAocc7pX2HoRmgKd8CgSqsjBFBneusz/E16e6A==",
-  "_location": "/discord.js",
+  "_integrity": "sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==",
+  "_location": "/async-limiter",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "discord.js",
-    "name": "discord.js",
-    "escapedName": "discord.js",
-    "rawSpec": "",
+    "raw": "async-limiter@~1.0.0",
+    "name": "async-limiter",
+    "escapedName": "async-limiter",
+    "rawSpec": "~1.0.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "~1.0.0"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "/ws"
   ],
-  "_resolved": "https://registry.npmjs.org/discord.js/-/discord.js-11.3.2.tgz",
-  "_shasum": "3c4074c1cb1a4916582fb96ded5ffa1324411f95",
-  "_spec": "discord.js",
-  "_where": "C:\\Users\\brzus\\Desktop\\Hydrix Bot",
+  "_resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.0.tgz",
+  "_shasum": "78faed8c3d074ab81f22b4e985d79e8738f720f8",
+  "_spec": "async-limiter@~1.0.0",
+  "_where": "C:\\Users\\brzus\\Desktop\\Hydrix Bot\\node_modules\\ws",
   "author": {
-    "name": "Amish Shah",
-    "email": "amishshah.2k@gmail.com"
-  },
-  "browser": {
-    "ws": false,
-    "uws": false,
-    "erlpack": false,
-    "prism-media": false,
-    "opusscript": false,
-    "node-opus": false,
-    "tweetnacl": false,
-    "sodium": false,
-    "src/sharding/Shard.js": false,
-    "src/sharding/ShardClientUtil.js": false,
-    "src/sharding/ShardingManager.js": false,
-    "src/client/voice/dispatcher/StreamDispatcher.js": false,
-    "src/client/voice/opus/BaseOpusEngine.js": false,
-    "src/client/voice/opus/NodeOpusEngine.js": false,
-    "src/client/voice/opus/OpusEngineList.js": false,
-    "src/client/voice/opus/OpusScriptEngine.js": false,
-    "src/client/voice/pcm/ConverterEngine.js": false,
-    "src/client/voice/pcm/ConverterEngineList.js": false,
-    "src/client/voice/pcm/FfmpegConverterEngine.js": false,
-    "src/client/voice/player/AudioPlayer.js": false,
-    "src/client/voice/receiver/VoiceReadable.js": false,
-    "src/client/voice/receiver/VoiceReceiver.js": false,
-    "src/client/voice/util/Secretbox.js": false,
-    "src/client/voice/util/SecretKey.js": false,
-    "src/client/voice/util/VolumeInterface.js": false,
-    "src/client/voice/ClientVoiceManager.js": false,
-    "src/client/voice/VoiceBroadcast.js": false,
-    "src/client/voice/VoiceConnection.js": false,
-    "src/client/voice/VoiceUDPClient.js": false,
-    "src/client/voice/VoiceWebSocket.js": false
+    "name": "Samuel Reed"
   },
   "bugs": {
-    "url": "https://github.com/discordjs/discord.js/issues"
+    "url": "https://github.com/strml/async-limiter/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {
-    "long": "^4.0.0",
-    "prism-media": "^0.0.2",
-    "snekfetch": "^3.6.4",
-    "tweetnacl": "^1.0.0",
-    "ws": "^4.0.0"
-  },
+  "dependencies": {},
   "deprecated": false,
-  "description": "A powerful library for interacting with the Discord API",
+  "description": "asynchronous function queue with adjustable concurrency",
   "devDependencies": {
-    "@types/node": "^9.4.6",
-    "discord.js-docgen": "github:discordjs/docgen",
-    "eslint": "^4.18.0",
-    "parallel-webpack": "^2.2.0",
-    "uglifyjs-webpack-plugin": "^1.2.0",
-    "webpack": "^3.11.0"
+    "coveralls": "^2.11.2",
+    "eslint": "^4.6.1",
+    "eslint-plugin-mocha": "^4.11.0",
+    "intelli-espower-loader": "^1.0.1",
+    "istanbul": "^0.3.2",
+    "mocha": "^3.5.2",
+    "power-assert": "^1.4.4"
   },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "homepage": "https://github.com/discordjs/discord.js#readme",
+  "homepage": "https://github.com/strml/async-limiter#readme",
   "keywords": [
-    "discord",
-    "api",
-    "bot",
-    "client",
-    "node",
-    "discordapp"
+    "throttle",
+    "async",
+    "limiter",
+    "asynchronous",
+    "job",
+    "task",
+    "concurrency",
+    "concurrent"
   ],
-  "license": "Apache-2.0",
-  "main": "./src/index",
-  "name": "discord.js",
-  "peerDependencies": {
-    "bufferutil": "^3.0.3",
-    "erlpack": "discordapp/erlpack",
-    "node-opus": "^0.2.7",
-    "opusscript": "^0.0.6",
-    "sodium": "^2.0.3",
-    "libsodium-wrappers": "^0.7.3",
-    "uws": "^9.14.0"
-  },
+  "license": "MIT",
+  "name": "async-limiter",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/discordjs/discord.js.git"
+    "url": "git+https://github.com/strml/async-limiter.git"
   },
-  "runkitExampleFilename": "./docs/examples/ping.js",
   "scripts": {
-    "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
-    "docs:test": "docgen --source src --custom docs/index.yml",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
-    "test": "npm run lint && npm run docs:test",
-    "webpack": "parallel-webpack"
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls",
+    "example": "node example",
+    "lint": "eslint .",
+    "test": "mocha --R intelli-espower-loader test/",
+    "travis": "npm run lint && npm run coverage"
   },
-  "types": "./typings/index.d.ts",
-  "version": "11.3.2"
+  "version": "1.0.0"
 }
